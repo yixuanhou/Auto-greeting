@@ -1,7 +1,17 @@
 #morning-button {
-    padding: 50px;
+    font-size: large;
+    padding: 60px;
+}
+
+#morning-button:hover {
+    background-color: ivory; 
+}
+
+#seeya-button:hover {
+    background-color: ivory;
 }
 
 #seeya-button {
-    padding: 50px;
+    padding: 60px;
+    font-size: large;
 }
