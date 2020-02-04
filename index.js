@@ -1,5 +1,5 @@
 let morningMessageArray = ["morning", "good morning", "enjoy your day", "hiya", "best wishes from Yixuan", "best wishes from Ana", "ohhhhhh hello"];
-let seeyaMessageArray = ["good bye", "have a lovely night"]
+let seeyaMessageArray = ["good bye", "have a lovely night", "have a nice evening", "toodle pip"]
 
 document.getElementById("morning-button").addEventListener("click", changeMorningMessage);
 document.getElementById("seeya-button").addEventListener("click", changeSeeyaMessage);
