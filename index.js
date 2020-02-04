@@ -1,12 +1,19 @@
-let messageArray = ["morning", "good morning", "enjoy your day", "hiya", "best wishes from Yixuan", "best wishes from Ana", "ohhhhhh hello"];
+let morningMessageArray = ["morning", "good morning", "enjoy your day", "hiya", "best wishes from Yixuan", "best wishes from Ana", "ohhhhhh hello"];
+let seeyaMessageArray = ["good bye", "have a lovely night"]
 
-document.getElementById("morning-button").addEventListener("click", changeMessage);
+document.getElementById("morning-button").addEventListener("click", changeMorningMessage);
+document.getElementById("seeya-button").addEventListener("click", changeSeeyaMessage);
 
-function changeMessage () {
-    message = messageArray[Math.floor(Math.random() * messageArray.length)];
-    return (readMessage())
+function changeMorningMessage () {
+    message = morningMessageArray[Math.floor(Math.random() * morningMessageArray.length)];
+    return (readMessage());
+}
+
+function changeSeeyaMessage() {
+    message = seeyaMessageArray[Math.floor(Math.random() * seeyaMessageArray.length)];
+    return (readMessage());
 }
 
 function readMessage () {
-    responsiveVoice.speak(message)
+    responsiveVoice.speak(message);
 }
